@@ -22,7 +22,7 @@ class ViewController: UIViewController, XMLParserDelegate, MKMapViewDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.title = "부산 초등학교 지도"
+        self.title = "부산 종합병원 지도"
         mapView.delegate = self
         dataParsing()
         viewMap()
@@ -47,9 +47,9 @@ class ViewController: UIViewController, XMLParserDelegate, MKMapViewDelegate  {
                     
                     if let location = placemark.location {
                         // Add annotation
-                        annotation.title = school["학교명"]
-                        annotation.subtitle = school["설립구분"]
+                        annotation.title = school["병원명"]
                         annotation.coordinate = location.coordinate
+                        annotation.subtitle = school["전화번호"]
                         self.annotations.append(annotation)
                     }
                 }
@@ -61,7 +61,7 @@ class ViewController: UIViewController, XMLParserDelegate, MKMapViewDelegate  {
 
     
     func dataParsing() {
-        if let path = Bundle.main.url(forResource: "elementary", withExtension: "xml") {
+        if let path = Bundle.main.url(forResource: "busanhospital", withExtension: "xml") {
             if let parser = XMLParser(contentsOf: path) {
                 parser.delegate = self
                 
@@ -127,6 +127,12 @@ class ViewController: UIViewController, XMLParserDelegate, MKMapViewDelegate  {
             elements.append(item)
         }
         
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        if control == view.rightCalloutAccessoryView {
+            
+        }
     }
 
 }

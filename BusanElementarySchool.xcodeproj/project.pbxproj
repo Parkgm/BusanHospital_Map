@@ -12,8 +12,8 @@
 		0544D2151EB4DB08005EC13E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0544D2131EB4DB08005EC13E /* Main.storyboard */; };
 		0544D2171EB4DB08005EC13E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0544D2161EB4DB08005EC13E /* Assets.xcassets */; };
 		0544D21A1EB4DB08005EC13E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0544D2181EB4DB08005EC13E /* LaunchScreen.storyboard */; };
-		0544D2221EB4DBDE005EC13E /* elementary.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0544D2211EB4DBDE005EC13E /* elementary.xml */; };
 		0556607F21B6A3C400B11C2E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0556607E21B6A3C400B11C2E /* MapKit.framework */; };
+		7C7CA30421BDF516008E2FED /* busanhospital.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7C7CA30321BDF516008E2FED /* busanhospital.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		0544D2161EB4DB08005EC13E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0544D2191EB4DB08005EC13E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0544D21B1EB4DB08005EC13E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0544D2211EB4DBDE005EC13E /* elementary.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = elementary.xml; sourceTree = "<group>"; };
 		0556607E21B6A3C400B11C2E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7C7CA30321BDF516008E2FED /* busanhospital.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = busanhospital.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 			children = (
 				0544D20F1EB4DB08005EC13E /* AppDelegate.swift */,
 				0544D2111EB4DB08005EC13E /* ViewController.swift */,
-				0544D2211EB4DBDE005EC13E /* elementary.xml */,
+				7C7CA30321BDF516008E2FED /* busanhospital.xml */,
 				0544D2131EB4DB08005EC13E /* Main.storyboard */,
 				0544D2161EB4DB08005EC13E /* Assets.xcassets */,
 				0544D2181EB4DB08005EC13E /* LaunchScreen.storyboard */,
@@ -139,10 +139,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C7CA30421BDF516008E2FED /* busanhospital.xml in Resources */,
 				0544D21A1EB4DB08005EC13E /* LaunchScreen.storyboard in Resources */,
 				0544D2171EB4DB08005EC13E /* Assets.xcassets in Resources */,
 				0544D2151EB4DB08005EC13E /* Main.storyboard in Resources */,
-				0544D2221EB4DBDE005EC13E /* elementary.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
